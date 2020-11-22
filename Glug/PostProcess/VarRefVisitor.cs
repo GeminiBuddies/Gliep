@@ -1,4 +1,3 @@
-using System.Linq;
 using GeminiLab.Glug.AST;
 
 namespace GeminiLab.Glug.PostProcess {

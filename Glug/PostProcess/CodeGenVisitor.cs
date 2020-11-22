@@ -358,7 +358,7 @@ namespace GeminiLab.Glug.PostProcess {
             var valInfo = Pass.NodeInformation<VariableAllocationInfo>(node);
             switch (node) {
             // allow pseudo ast nodes
-            case OnStackList { List: var list } osl when info.IsPseudo || info.IsAssignable:
+            case OnStackList { List: var list } when info.IsPseudo || info.IsAssignable:
                 var count = list.Count;
                 fun.AppendShpRv(count);
                 --_delCount[fun];
