@@ -56,7 +56,7 @@ fn simple_project_file[name, desc, namespace] (
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
     <RootNamespace><~ if (namespace ~= nil) namespace else name ~></RootNamespace>
     <Description><~ desc ~></Description>
     <Authors>Benjamin P.M. Lovegood</Authors>
