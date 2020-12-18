@@ -7,12 +7,14 @@ namespace GeminiLab.Glos {
         [FieldOffset(0)] public double Float;
     }
 
+    [StructLayout(LayoutKind.Auto)]
     public partial struct GlosValue {
         private GlosValueType     _type;
         public  IntegerFloatUnion ValueNumber;
         public  object?           ValueObject;
 
-        private bool _hashCodeCalculated;
+        // hash assigned or calculated
+        private bool _hashAssigned;
         private long _hashCode;
 
         // setter triggers hash pre-calculation

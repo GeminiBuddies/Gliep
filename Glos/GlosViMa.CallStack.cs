@@ -8,6 +8,10 @@ namespace GeminiLab.Glos {
         public int          LocalVariablesBase;
         public int          PrivateStackBase;
         public int          InstructionPointer;
+        public int          Phase;
+        public int          PhaseCount;
+        public GlosOp       LastOp;
+        public long         LastImm;
         public int          DelimiterStackBase;
         public int          ReturnSize;
         public GlosFunction Function;
